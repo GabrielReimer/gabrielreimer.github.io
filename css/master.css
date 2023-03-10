@@ -75,7 +75,7 @@ header{
 }
 #images {
   display: flex;
-  right: 1280px;
+  right: 1280px; /* 2 x picture leng */
   position: relative;
 }
 #left {
@@ -89,7 +89,6 @@ header{
   top: 178.5px;
   left: 590px;
 }
-
 #radiobox {
   display: none;
   position: relative;
