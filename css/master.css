@@ -100,8 +100,93 @@ main{
   background-color: green;
   width: 70%;
 }
+
+#article1{
+  grid-area: one;
+  background-color: aqua;
+}
+
+#mel1{
+  grid-area: mel;
+  background-color: pink;
+}
+
+#article2 {
+  grid-area: two;
+  background-color: aqua;
+}
+#mel2 {
+  grid-area: melo;
+  background-color: pink;
+}
+
+#article3 {
+  grid-area: three;
+  background-color: aqua;
+}
+
+#imga1{
+  grid-area: aone;
+  background-color: blueviolet;
+}
+#imga2 {
+  grid-area: atwo;
+  background-color: blueviolet;
+}
+#imga3 {
+  grid-area: athree;
+  background-color: blueviolet;
+}
+
+#rub1{
+  grid-area: rone;
+  background-color: beige;
+}
+#rub2 {
+  grid-area: rtwo;
+  background-color: beige;
+}
+#rub3 {
+  grid-area: rthree;
+  background-color: beige;
+}
+
+
+
+
+
+#wrapperMain {
+  height: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+  grid-template-rows: 5% 9% 9% 9% 2% 5% 9% 9% 9% 2% 5% 9% 9% 9%;
+
+  grid-template-areas:
+  "aone aone aone rone rone rone"
+  "aone aone aone one one one"
+  "aone aone aone one one one"
+  "aone aone aone one one one"
+  "mel mel mel mel mel mel"
+  "rtwo rtwo rtwo atwo atwo atwo"
+  "two two two atwo atwo atwo"
+  "two two two atwo atwo atwo"
+  "two two two atwo atwo atwo"
+  "melo melo melo melo melo melo"
+  "athree athree athree rthree rthree rthree"
+  "athree athree athree three three three"
+  "athree athree athree three three three"
+  "athree athree athree three three three";
+
+
+
+}
+
 footer{
   margin-top: 5vh;
   height: 30vh;
   background-color: cyan;
 }
+
