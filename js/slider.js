@@ -1,8 +1,6 @@
-
-
 window.onload = $("#radio2").prop("checked", true);
 
-var px = 1280;
+var px = 2664;
 
 $("#jsOff").hide();
 $("#right").show();
@@ -12,16 +10,16 @@ $("#radiobox").show();
 
 $("#right").click(function(){
 
-    px+=640;
+    px+=1332;
     check();
     $("#images").animate({
-    right:"+=640",
+    right:"+=1332",
 
     }, 1500, function(){
-    if (px>1920) {
-        px -= 1920;
+    if (px>3996) {
+        px -= 3996;
         check();
-        $("#images").css("right", "-=1920px")
+        $("#images").css("right", "-=3996px")
     }
 
     console.log(px);
@@ -30,16 +28,16 @@ $("#right").click(function(){
 
 $("#left").click(function(){
 
-    px-=640;
+    px-=1332;
     check()
 
     $("#images").animate({
-    right:"-=640",
+    right:"-=1332",
     }, 1500, function(){
-    if (px<640) {
-        px += 1920;
+    if (px<1332) {
+        px += 3996;
         check()
-        $("#images").css("right", "+=1920px")
+        $("#images").css("right", "+=3996px")
     }
 
     console.log(px);
@@ -48,18 +46,18 @@ $("#left").click(function(){
 
 $("#radio1").click(function() {
 
-if(px == 1280){
+if(px == 2664){
     $("#images").animate({
-    right:"640",
+    right:"1332",
     }, 1000, function(){
-    px=640;
+    px=1332;
     });
 }
-if(px == 1920){
+if(px == 3996){
     $("#images").animate({
-    right:"640",
+    right:"1332",
     }, 2000, function(){
-    px=640;
+    px=1332;
     });
 }
 
@@ -68,28 +66,28 @@ if(px == 1920){
 $("#radio2").click(function() {
 
 $("#images").animate({
-    right:"1280",
+    right:"2664",
 }, 1000, function(){
-    px=1280;
+    px=2664;
 });
 
 });
 
 $("#radio3").click(function() {
 
-    if(px == 640){
+    if(px == 1332){
     $("#images").animate({
-        right:"1920",
+        right:"3996",
     }, 2000, function(){
-        px=1920;
+        px=3996;
     });
     }
 
-    if (px == 1280) {
+    if (px == 2664) {
     $("#images").animate({
-        right:"1920",
+        right:"3996",
     }, 1000, function(){
-        px=1920;
+        px=3996;
     });
     }
 
@@ -97,13 +95,13 @@ $("#radio3").click(function() {
 
 function check(){
 
-    if(px==640){
+    if(px==1332){
     $("#radio1").prop("checked", true);
     }
-    if(px==1280){
+    if(px==2664){
     $("#radio2").prop("checked", true);
     }
-    if(px==1920){
+    if(px==3996){
     $("#radio3").prop("checked", true);
     }
 

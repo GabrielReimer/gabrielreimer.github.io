@@ -55,14 +55,11 @@ header{
   height: 13vh;
   width: 100%;
   position: fixed;
-  display: flex;
   top: 0px;
 }
 #slider{
-  display: flex;
   margin-top: 18vh;
   margin-left: 15%;
-  padding-top: 13vh;
   height: 70vh;
   background-color: black;
   width: 70%;
@@ -75,8 +72,8 @@ header{
 }
 #images {
   display: flex;
-  right: 1280px; /* 2 x picture leng */
   position: relative;
+  right: 2664px; /* 2 x picture leng */
 }
 #left {
   display: none;
