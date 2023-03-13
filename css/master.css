@@ -93,6 +93,9 @@ header{
   top: 95%;
   left: 616px;
 }
+input[type="radio"] {
+  accent-color: red;
+}
 main{
   margin-top: 5vh;
   height: 200vh;
