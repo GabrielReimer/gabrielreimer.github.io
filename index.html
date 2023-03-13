@@ -66,5 +66,29 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="js/slider.js"></script>
+    <script>
+
+      $(document).ready(function () {
+        $("#img1").click(function () {
+          $('html,body').animate({
+            scrollTop: $("#article1").offset().top - 110
+          },
+            500)
+        });
+        $("#img2").click(function () {
+          $('html,body').animate({
+            scrollTop: $("#article2").offset().top - 110
+          },
+            500)
+        });
+        $("#img3").click(function () {
+          $('html,body').animate({
+            scrollTop: $("#article3").offset().top - 110
+          },
+            500)
+        });
+      });
+
+    </script>
   </body>
 </html>
