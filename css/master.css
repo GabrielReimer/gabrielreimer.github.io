@@ -55,15 +55,16 @@ header{
   height: 13vh;
   width: 100%;
   position: fixed;
+  z-index: 1;
   top: 0px;
 }
 #slider{
   margin-top: 18vh;
   margin-left: 15%;
   height: 70vh;
-  background-color: black;
   width: 70%;
   overflow: hidden;
+  position: relative;
 }
 #jsOff {
   border: 1px solid;
@@ -78,18 +79,19 @@ header{
 #left {
   display: none;
   position: absolute;
-  top: 178.5px;
+  top: 48%;
 }
 #right {
   display: none;
   position: absolute;
-  top: 178.5px;
-  left: 590px;
+  top: 48%;
+  left: 1282px;
 }
 #radiobox {
   display: none;
-  position: relative;
-  left: 915px;
+  position: absolute;
+  top: 95%;
+  left: 616px;
 }
 main{
   margin-top: 5vh;
