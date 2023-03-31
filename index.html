@@ -5,28 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
     <link rel="stylesheet" href="css/master.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
+    </style>
   </head>
 
   <body>
-
-    
-
     <header>
-      <div id="logo"></div>
-
+      <div id="logoDiv">
+        <img id="logo" src="arrowleft.png" alt="">
+      </div>
+      <H1 id="pageName">Shroom room</H1>
+      <div id="articleBox">
+        <div id="articleNav">Articles</div>
+        <div id="articleSlideDown">
+          <div class="article1-slide">Article one</div>
+          <div class="article2-slide">Article two</div>
+          <div class="article3-slide">Article three</div>
+        </div>
+      </div>
     </header>
 
     <div id="jsOff">
-      JavaScript is off turn in on for full functionalty
+      Warning! JavaScript is off turn it on for full functionalty
     </div>
 
     <div id="slider">
       <div id="images">
-        <img src="imgfolder/img3.jpg" alt="Mountains" width="1332" height="656">
-        <img src="imgfolder/img1.jpg" alt="Nebula" width="1332" height="656">
-        <img src="imgfolder/img2.jpg" alt="River" width="1332" height="656">
-        <img src="imgfolder/img3.jpg" alt="Mountains" width="1332" height="656">
-        <img src="imgfolder/img1.jpg" alt="Nebula" width="1332" height="656">
+        <img class="img3" src="imgfolder/img3.jpg" alt="Mountains" width="1332" height="656">
+        <img class="img1" src="imgfolder/img1.jpg" alt="Nebula" width="1332" height="656">
+        <img class="img2" src="imgfolder/img2.jpg" alt="River" width="1332" height="656">
+        <img class="img3" src="imgfolder/img3.jpg" alt="Mountains" width="1332" height="656">
+        <img class="img1" src="imgfolder/img1.jpg" alt="Nebula" width="1332" height="656">
       </div>
       <div id="left">
         <img src="imgfolder/arrowleft.png" alt="arrow left" width="50" height="50">
@@ -92,23 +102,63 @@
     <script>
 
       $(document).ready(function () {
-        $("#img1").click(function () {
+        $(".img1").click(function () {
           $('html,body').animate({
-            scrollTop: $("#article1").offset().top - 110
+            scrollTop: $("#article1").offset().top - 240
           },
             500)
         });
-        $("#img2").click(function () {
+        $(".img2").click(function () {
           $('html,body').animate({
-            scrollTop: $("#article2").offset().top - 110
+            scrollTop: $("#article2").offset().top - 240
           },
             500)
         });
-        $("#img3").click(function () {
+        $(".img3").click(function () {
           $('html,body').animate({
-            scrollTop: $("#article3").offset().top - 110
+            scrollTop: $("#article3").offset().top - 240
           },
             500)
+        });
+        $("#pageName").click(function () {
+          $('html,body').animate({
+            scrollTop: $("body").offset().top - 240
+          },
+            500)
+        });
+        $("#logoDiv").click(function () {
+          $('html,body').animate({
+            scrollTop: $("body").offset().top - 240
+          },
+            500)
+        });
+        /*$("#articleNav").click(function () {
+          $('html,body').animate({
+            scrollTop: $("main").offset().top - 180
+          },
+            500)
+        });*/
+
+        $(".article1-slide").click(function () {
+          $('html,body').animate({
+            scrollTop: $("#article1").offset().top - 240
+          },
+            500)
+        });
+        $(".article2-slide").click(function () {
+          $('html,body').animate({
+            scrollTop: $("#article2").offset().top - 240
+          },
+            500)
+        });
+        $(".article3-slide").click(function () {
+          $('html,body').animate({
+            scrollTop: $("#article3").offset().top - 240
+          },
+            500)
+        });
+        $("#articleBox").click(function () {
+          $("#articleSlideDown").slideToggle("slow");
         });
       });
 
