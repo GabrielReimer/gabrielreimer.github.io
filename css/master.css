@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
+  
 }
 ol, ul {
   list-style: none;
@@ -48,7 +49,7 @@ table {
 }
 body{
   font-family: 'MedievalSharp', cursive;
-  background-color: pink;
+  background-color: rgb(16, 21, 51);
   height: 310vh;
 }
 header{
@@ -171,41 +172,54 @@ main{
   margin-top: 5vh;
   height: 200vh;
   margin-left: 15%;
-  background-color: green;
+  background-color: transparent;
   width: 70%;
 }
 
 #article1{
   grid-area: one;
-  background-color: aqua;
+  background-color: rgb(255, 255, 255);
+  font-size: x-large;
+  padding: 5%;
+  line-height: 150%;
+  color: rgb(0, 0, 0);
 }
 
 #mel1{
   grid-area: mel;
-  background-color: pink;
+  background-color: transparent;
 }
 
 #article2 {
   grid-area: two;
-  background-color: aqua;
+background-color: rgb(255, 255, 255);
+  font-size: x-large;
+  padding: 5%;
+  line-height: 150%;
+  color: rgb(0, 0, 0);
 }
 #mel2 {
   grid-area: melo;
-  background-color: pink;
+  background-color: transparent;
 }
 
 #article3 {
   grid-area: three;
-  background-color: aqua;
+background-color: rgb(255, 255, 255);
+  font-size: x-large;
+  padding: 5%;
+  line-height: 150%;
+  color: rgb(0, 0, 0);
 }
 
 #imga1{
   grid-area: aone;
-  background-color: blueviolet;
+  
 }
 #imga2 {
   grid-area: atwo;
-  background-color: blueviolet;
+  background-color: white;
+  margin-left: 1px;
 }
 #imga3 {
   grid-area: athree;
@@ -214,15 +228,27 @@ main{
 
 #rub1{
   grid-area: rone;
-  background-color: beige;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: xx-large;
 }
 #rub2 {
   grid-area: rtwo;
-  background-color: beige;
+  background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
 }
 #rub3 {
   grid-area: rthree;
-  background-color: beige;
+  background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xx-large;
 }
 
 
@@ -234,8 +260,9 @@ main{
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  background-color: transparentx;
   display: grid;
-  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 5% 9% 9% 9% 2% 5% 9% 9% 9% 2% 5% 9% 9% 9%;
   grid-template-areas:
   "aone aone aone rone rone rone"
