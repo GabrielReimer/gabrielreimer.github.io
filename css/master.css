@@ -59,6 +59,8 @@ header{
   position: fixed;
   z-index: 1;
   top: 0px;
+}
+nav{
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -125,7 +127,7 @@ header{
   margin-top: 18vh;
   margin-left: 15%;
   height: 70vh;
-  width: 70%;
+  width: 69.9%;
   overflow: hidden;
   position: relative;
 }
@@ -205,7 +207,7 @@ background-color: rgb(255, 255, 255);
 
 #article3 {
   grid-area: three;
-background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   font-size: x-large;
   padding: 5%;
   line-height: 150%;
@@ -219,7 +221,6 @@ background-color: rgb(255, 255, 255);
 #imga2 {
   grid-area: atwo;
   background-color: white;
-  margin-left: 1px;
 }
 #imga3 {
   grid-area: athree;
@@ -237,18 +238,20 @@ background-color: rgb(255, 255, 255);
 #rub2 {
   grid-area: rtwo;
   background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: xx-large;
 }
 #rub3 {
   grid-area: rthree;
   background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: xx-large;
 }
 
 
