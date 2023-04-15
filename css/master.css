@@ -28,6 +28,12 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
+
+.centerY{
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 body {
   line-height: 1;
   
@@ -65,34 +71,36 @@ nav{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-weight: bold;
+  font-weight: 800;
 }
 #logoDiv{
   height: 123px;
   width: 123px;
 }
-#logo{
-  height: 100%;
-  width: 100%;
-}
 #pageName{
   align-self: center;
   justify-self: center;
   font-size: 72px;
-  color: rgb(255, 215, 0);
+  color: #f2ca82;
   text-rendering: auto;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
   font-size: 250%;
 }
-#articleBox {
-  background-color: rgb(255, 255, 255);
+#articleBox{
+  font-weight: 800;
   width: 150px;
   height: 50px;
   text-align: center;
-  border-radius: 50px;
-  border: 3px solid rgb(255, 215, 0);
-  color: rgb(255, 215, 0);
+  border-radius: 40px;
+  color: #f2ca82;
+  background-color: #091d38;
+  border: 2px solid #f2ca82;
   text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
+}
+#articleBox:hover{
+  background-color: #f2ca82;
+  color:#091d38;
+  border: 2px solid #091d38;
 }
 #articleNav {
   text-decoration: none;
@@ -103,27 +111,22 @@ nav{
 }
 #articleSlideDown {
   display: none;
-  background-color: white;
   margin-top: -8%;
-  height: 70px;
+  height: 144px;
   margin-left: -50%;
-  width: 200%;
-  border-radius: 50px;
-  border: 3px solid rgb(255, 215, 0);
+  width: 204%;
+  background-color: inherit;
+  border-radius: inherit;
+  border: inherit;
+  text-shadow: inherit;
 }
-.article1-slide {
-  padding: 1px;
+.art{
+  padding: 5px 0px 0px 0px;
   font-size: 130%;
 }
-.article2-slide {
-  padding: 1px;
-  font-size: 130%;
+.border{
+  border-bottom: inherit;
 }
-.article3-slide {
-  padding: 1px;
-  font-size: 130%;
-}
-
 #slider{
   margin-top: 18vh;
   margin-left: 15%;
@@ -133,18 +136,20 @@ nav{
   position: relative;
 }
 #jsOff {
-  border: 1px solid;
+  border: 2px solid;
   background-color: rgb(255, 0, 0);
+  font-size: 250%;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 800;
   width: 50%;
   height: 15%;
+  position: fixed;
+  display: flex;
   top: 35%;
   left: 25%;
   z-index: 10;
-  position: fixed;
-  display: flex;
-  font-size: 250%;
   align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 #images {
   display: flex;
@@ -154,22 +159,31 @@ nav{
 #left {
   display: none;
   position: absolute;
-  top: 48%;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -15px;
 }
 #right {
   display: none;
   position: absolute;
-  top: 48%;
-  left: 1282px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1242px;
 }
 #radiobox {
   display: none;
   position: absolute;
   top: 95%;
-  left: 616px;
+  left: 600.5px;
 }
-input[type="radio"] {
-  accent-color: red;
+input[type="radio"]{ 
+  appearance:unset;
+  padding: 8px;
+  background-color: #091d38;
+  border-radius: 50%;
+}
+input[type=radio]:checked {
+  background-color: #f2ca82;
 }
 main{
   margin-top: 5vh;
@@ -214,20 +228,15 @@ background-color: rgb(255, 255, 255);
   line-height: 150%;
   color: rgb(0, 0, 0);
 }
-
 #imga1{
   grid-area: aone;
-  
 }
 #imga2 {
   grid-area: atwo;
-  background-color: white;
 }
 #imga3 {
   grid-area: athree;
-  background-color: blueviolet;
 }
-
 #rub1{
   grid-area: rone;
   background-color: white;
@@ -254,10 +263,6 @@ background-color: rgb(255, 255, 255);
   align-items: center;
   font-size: xx-large;
 }
-
-
-
-
 
 #wrapperMain {
   height: 100%;
