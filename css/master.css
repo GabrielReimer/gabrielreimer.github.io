@@ -269,7 +269,7 @@ background-color: rgb(255, 255, 255);
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-color: transparentx;
+  background-color: transparent;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 5% 9% 9% 9% 2% 5% 9% 9% 9% 2% 5% 9% 9% 9%;
