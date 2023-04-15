@@ -20,8 +20,8 @@
         <div id="articleBox">
           <div id="articleNav">Articles</div>
           <div id="articleSlideDown">
-            <div class="article1-slide art border">Välkommen till Harry Potter universe</div>
-            <div class="article2-slide art border">Checka in på världens första Star wars hotell</div>
+            <div class="article1-slide art">Välkommen till Harry Potter universe</div>
+            <div class="article2-slide art">Checka in på världens första Star wars hotell</div>
             <div class="article3-slide art">Besök scenerna från Lord of the Rings</div>
           </div>
         </div>
@@ -159,7 +159,7 @@
           },
             500)
         });
-        $("#articleBox").click(function () {
+        $("#articleBox").hover(function () {
           $("#articleSlideDown").slideToggle("slow");
         });
       });
