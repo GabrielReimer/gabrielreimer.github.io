@@ -7,7 +7,6 @@ $("#right").show();
 $("#left").show();
 $("#radiobox").show();
 
-
 $("#right").click(function(){
 
     px+=1332;

@@ -212,7 +212,7 @@ main{
 
 #article2 {
   grid-area: two;
-background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
   font-size: x-large;
   padding: 5%;
   line-height: 150%;
@@ -266,7 +266,6 @@ background-color: rgb(255, 255, 255);
   align-items: center;
   font-size: xx-large;
 }
-
 #wrapperMain {
   height: 100%;
   width: 100%;
@@ -290,10 +289,7 @@ background-color: rgb(255, 255, 255);
   "athree athree athree rthree rthree rthree"
   "athree athree athree three three three"
   "athree athree athree three three three"
-  "athree athree athree three three three";
-
-
-
+  "athree athree athree three three three"
 }
 
 footer{
