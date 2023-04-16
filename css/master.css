@@ -132,6 +132,7 @@ nav{
   position: relative;
 }
 #jsOff {
+  display: none;
   border: 2px solid;
   background-color: rgb(255, 0, 0);
   font-size: 250%;

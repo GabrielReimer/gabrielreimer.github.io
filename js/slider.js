@@ -2,7 +2,6 @@ window.onload = $("#radio2").prop("checked", true);
 
 var px = 2664;
 
-$("#jsOff").hide();
 $("#right").show();
 $("#left").show();
 $("#radiobox").show();
