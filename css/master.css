@@ -295,5 +295,17 @@ main{
 footer{
   margin-top: 5vh;
   height: 30vh;
-  background-color: cyan;
+  background-color: rgb(51, 63, 105);
+}
+
+#fotext{
+  font-size: xx-large;
+  background-color: #f2ca82;
+}
+
+.fot{
+  font-size: x-large;
+  color: #f2ca82;
+  margin-top: 15px;
+  margin-left: 5px;
 }
