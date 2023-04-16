@@ -28,15 +28,8 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
-
-.centerY{
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 body {
   line-height: 1;
-  
 }
 ol, ul {
   list-style: none;
