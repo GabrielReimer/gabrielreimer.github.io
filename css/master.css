@@ -67,10 +67,12 @@ nav{
   font-weight: 800;
 }
 #logoDiv{
+  cursor: pointer;
   height: 123px;
   width: 123px;
 }
 #pageName{
+  cursor: pointer;
   align-self: center;
   justify-self: center;
   font-size: 72px;
@@ -80,6 +82,7 @@ nav{
   font-size: 250%;
 }
 #articleBox{
+  cursor: pointer;
   font-weight: 800;
   width: 150px;
   height: 50px;
@@ -124,6 +127,7 @@ nav{
   overflow: hidden;
 }
 #slider{
+  cursor: pointer;
   margin-top: 18vh;
   margin-left: 15%;
   height: 70vh;
@@ -174,6 +178,7 @@ nav{
   left: 600.5px;
 }
 input[type="radio"]{ 
+  cursor: pointer;
   appearance:unset;
   padding: 8px;
   background-color: #091d38;
